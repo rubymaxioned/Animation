@@ -222,10 +222,16 @@ li {
 /*=================================
   Header styling starts here
 =================================*/
+main {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .wrapper {
-  width: 30%;
-  height: 80vh;
+  width: 22%;
+  height: 90vh;
   background: url("/assets/Images/bg.jpg");
   background-position: center;
   background-repeat: no-repeat;
@@ -252,9 +258,13 @@ li {
   bottom: 0;
 }
 
-.section3 { right: 0; }
+.section3 {
+  right: 0;
+}
 
-.section4 { left: 0; }
+.section4 {
+  left: 0;
+}
 
 .section5 {
   bottom: 0;
