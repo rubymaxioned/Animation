@@ -282,16 +282,6 @@ ul li img {
   font-size: 25px;
 }
 
-.section2 p:nth-of-type(1) {
-  left: 166%;
-  bottom: 73px;
-}
-
-.section2 p:nth-of-type(2) {
-  left: 159%;
-  bottom: 71px;
-}
-
 .section2 ul {
   display: flex;
   flex-direction: column;
@@ -304,6 +294,16 @@ ul li img {
 .section3 ul {
   display: flex;
   flex-direction: column;
+}
+.section3-li li img {
+  width: 50%;
+}
+.section3-li li:nth-of-type(2) img {
+  width: 40%;
+}
+
+.section3-li li:nth-of-type(3) img {
+  width: 36%;
 }
 
 .section4 {
@@ -335,6 +335,8 @@ ul li img {
 }
 
 /*section 1 animation end*/
+
+/*section 2 animation*/
 .section2 li:nth-of-type(1) img {
   width: 85%;
 }
@@ -345,7 +347,7 @@ ul li img {
   left: 50%;
   width: 70%;
   animation-name: sandwich;
-  animation-duration: 0.5s;
+  animation-duration: 3s;
   animation-delay: 0.5s;
   animation-fill-mode: forwards;
 }
@@ -357,31 +359,208 @@ ul li img {
   right: 505;
   left: 240%;
   animation-name: sadsonali;
-  animation-duration: 1s;
+  animation-duration: 3s;
   animation-delay: 1s;
   animation-fill-mode: forwards;
 }
 
+.section2-para {
+  left: 40%;
+  position: relative;
+  text-align: center;
+  bottom: 74px;
+  animation-name: boring;
+  animation-fill-mode: forwards;
+  animation-duration: 3s;
+  animation-delay: 1s;
+}
+
 @keyframes sandwich {
-  from {
+  25% {
     left: 50%;
   }
-  to {
+  50% {
     left: 122%;
+  }
+  80% {
+    left: 122%;
+  }
+  100% {
+    left: 50%;
   }
 }
 
 @keyframes sadsonali {
-  from {
+  25% {
     left: 240%;
   }
-  to {
+  50% {
     left: 170%;
+  }
+  75% {
+    left: 170%;
+  }
+  100% {
+    left: 240%;
   }
 }
 
-/*section 2 animation*/
+@keyframes boring {
+  25% {
+    left: 60%;
+  }
+  50% {
+    left: 128%;
+  }
+  75% {
+    left: 128%;
+  }
+  100% {
+    left: 60%;
+  }
+  /* from {
+    left: 60%;
+  }
+  to {
+    left: 128%;
+  } */
+}
 /*section 2 animation end*/
+
+/*section 3 animation*/
+
+.section3-li li:nth-of-type(1) {
+  position: relative;
+  right: 245%;
+  top: 323px;
+  animation-name: plate;
+  animation-duration: 2s;
+  animation-delay: 3s;
+  animation-fill-mode: forwards;
+}
+
+.section3-li li:nth-of-type(2) {
+  position: relative;
+  right: 241%;
+  top: 278px;
+  animation-name: inner-sand;
+  animation-duration: 2s;
+  animation-delay: 3s;
+  animation-fill-mode: forwards;
+}
+
+.section3-li li:nth-of-type(3) {
+  position: relative;
+  right: 238%;
+  top: 238px;
+  animation-name: bread;
+  animation-duration: 4.2s;
+  animation-delay: 3s;
+  animation-fill-mode: forwards;
+}
+
+.section3-li li:nth-of-type(4) {
+  position: relative;
+    right: 210%;
+    top: 180px;
+}
+
+.section3-li li:nth-of-type(4) img {
+  width: 30%;
+  transform: rotate(313deg);
+}
+
+.section3-li li:nth-of-type(5) img {
+  width: 36%;
+  animation-name: mayo-img;
+  animation-duration: 4s;
+  animation-delay: 7s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+.section3-li li:nth-of-type(5) {
+  position: relative;
+  right: 230%;
+  top: 161px;
+  animation-name: mayo;
+  animation-duration: 4.4s;
+  animation-delay: 7s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes plate {
+  from {
+    right: 245%;
+  }
+  to {
+    right: 153%;
+  }
+}
+
+@keyframes inner-sand {
+  from {
+    right: 241%;
+  }
+  to {
+    right: 150%;
+  }
+}
+
+@keyframes bread {
+  0% {
+    right: 241%;
+  }
+  50% {
+    right: 144%;
+  }
+  49% {
+    right: 144%;
+    top: 238px;
+  }
+  71% {
+    right: 144%;
+    top: 238px;
+  }
+  100% {
+    top: 206px;
+    right: 144%;
+  }
+}
+
+@keyframes mayo {
+  0% {
+    right: 148%;
+  }
+  50% {
+    right: 148%;
+  }
+  75% {
+    right: 148%;
+  }
+  100% {
+    right: 148%;
+  }
+}
+
+@keyframes mayo-img {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.4;
+  }
+  50% {
+    opacity: 0.6;
+  }
+  75% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 0.9;
+  }
+}
+/*section 3 animation end*/
 
 /*Animation end*/
 
